@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.96811073">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.96811073" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.96811073" name="Debug" parent="fr.ac6.managedbuild.config.gnu.cross.exe.debug" postannouncebuildStep="Generating binary and Printing size information:" postbuildStep="arm-none-eabi-objcopy -O binary &quot;${BuildArtifactFileBaseName}.elf&quot; &quot;${BuildArtifactFileBaseName}.bin&quot;; arm-none-eabi-size &quot;${BuildArtifactFileName}&quot;">
+					<folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.96811073." name="/" resourcePath="">
+						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug.1694041319" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug">
+							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.1635827504" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu" value="STM32F746NGHx" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.board.1776590843" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board" value="STM32F746G-DISCO" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.1445968099" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu" value="fr.ac6.managedbuild.option.gnu.cross.fpu.fpv5-sp-d16" valueType="enumerated"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.420632523" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi" value="fr.ac6.managedbuild.option.gnu.cross.floatabi.hard" valueType="enumerated"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.1763524067" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/STM32746G_DISCOVERY_RTOS}/Debug" id="fr.ac6.managedbuild.builder.gnu.cross.1958560328" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="fr.ac6.managedbuild.builder.gnu.cross">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Release"/>
+								</outputEntries>
+							</builder>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1727601284" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
+								<option id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.669868538" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false"/>
+								<option id="gnu.c.compiler.option.debugging.level.140326918" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.2079235686" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Application/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/FreeRTOS/CMSIS_RTOS/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/FreeRTOS/portable/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Drivers/BSP/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Drivers/CMSIS/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Drivers/CMSIS/device/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Drivers/STM32F7xx_HAL_Driver/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Drivers/STM32F7xx_HAL_Driver/inc/Legacy}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/FreeRTOS/inc}&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.589745208" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32F746xx"/>
+									<listOptionValue builtIn="false" value="USE_HAL_DRIVER"/>
+									<listOptionValue builtIn="false" value="USE_STM32746G_DISCOVERY"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.562556516" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.545106130" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.1738135394" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
+								<option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level.1021399524" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.1920275128" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.1885526608" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker">
+								<option id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.script.171873376" name="Linker Script (-T)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.script" value="${workspace_loc:/${ProjName}/STM32F746NGHx_FLASH.ld}" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1930945048" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.225883168" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.263153474" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.1096129070" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler">
+								<option id="gnu.both.asm.option.include.paths.373045724" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths"/>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.45242445" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.20065354" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_cec.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_utils.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_usb.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_usart.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_tim.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_spi.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_sdmmc.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_rtc.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_rng.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_rcc.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_pwr.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_lptim.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_i2c.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_gpio.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_fmc.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_exti.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_dma2d.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_dma.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_dac.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_crc.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_adc.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_wwdg.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_usart.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_timebase_tim_template.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_timebase_rtc_wakeup_template.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_timebase_rtc_alarm_template.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_sram.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_spi.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_spdifrx.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_smbus.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_smartcard.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_smartcard_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_sdram.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_sd.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_sai.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_sai_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_rtc.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_rtc_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_rng.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_qspi.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_pwr.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_pcd.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_pcd_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_nor.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_nand.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_msp_template.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_mmc.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_mdios.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_ltdc.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_ltdc_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_lptim.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_jpeg.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_iwdg.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_irda.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_i2s.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_hcd.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_hash.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_hash_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_flash.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_flash_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_eth.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_dsi.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_dma2d.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_dma_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_dfsdm.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_dcmi.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_dcmi_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_dac.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_dac_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_cryp.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_cryp_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_crc.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_crc_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_can.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_adc_ex.c|Drivers/BSP/src/stm32746g_discovery_ts.c|Drivers/BSP/src/stm32746g_discovery_sdram.c|Drivers/BSP/src/stm32746g_discovery_sd.c|Drivers/BSP/src/stm32746g_discovery_qspi.c|Drivers/BSP/src/stm32746g_discovery_lcd.c|Drivers/BSP/src/stm32746g_discovery_eeprom.c|Drivers/BSP/src/stm32746g_discovery_camera.c|Drivers/BSP/src/stm32746g_discovery_audio.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="fr.ac6.managedbuild.config.gnu.cross.exe.release.1329825614">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.1329825614" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.1329825614" name="Release" parent="fr.ac6.managedbuild.config.gnu.cross.exe.release" postannouncebuildStep="Generating binary and Printing size information:" postbuildStep="arm-none-eabi-objcopy -O binary &quot;${BuildArtifactFileBaseName}.elf&quot; &quot;${BuildArtifactFileBaseName}.bin&quot;; arm-none-eabi-size -B &quot;${BuildArtifactFileName}&quot;">
+					<folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.release.1329825614." name="/" resourcePath="">
+						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release.869054284" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release">
+							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.1444112711" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu" value="STM32F746NGHx" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.board.1778954059" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board" value="STM32F746G-DISCO" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.1661255455" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu" value="fr.ac6.managedbuild.option.gnu.cross.fpu.fpv5-sp-d16" valueType="enumerated"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.435647312" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi" value="fr.ac6.managedbuild.option.gnu.cross.floatabi.hard" valueType="enumerated"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.1118172915" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/STM32746G_DISCOVERY_RTOS}/Release" id="fr.ac6.managedbuild.builder.gnu.cross.327386730" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="fr.ac6.managedbuild.builder.gnu.cross"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.100061684" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
+								<option id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.133455565" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.150207357" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.636570316" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1574355874" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32F746G_DISCO"/>
+									<listOptionValue builtIn="false" value="STM32F746NGHx"/>
+									<listOptionValue builtIn="false" value="STM32F7"/>
+									<listOptionValue builtIn="false" value="STM32"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.380015747" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.1607632975" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.1841756454" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
+								<option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level.1184151010" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.cpp.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.1485882709" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.1020250724" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1369457969" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.641708818" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.1096851305" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.709382062" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler">
+								<option id="gnu.both.asm.option.include.paths.770087693" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.869130249" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.1543605442" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_cec.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_utils.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_usb.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_usart.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_tim.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_spi.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_sdmmc.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_rtc.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_rng.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_rcc.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_pwr.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_lptim.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_i2c.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_gpio.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_fmc.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_exti.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_dma2d.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_dma.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_dac.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_crc.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_ll_adc.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_wwdg.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_usart.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_timebase_tim_template.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_timebase_rtc_wakeup_template.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_timebase_rtc_alarm_template.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_sram.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_spi.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_spdifrx.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_smbus.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_smartcard.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_smartcard_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_sdram.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_sd.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_sai.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_sai_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_rtc.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_rtc_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_rng.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_qspi.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_pwr.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_pcd.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_pcd_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_nor.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_nand.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_msp_template.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_mmc.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_mdios.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_ltdc.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_ltdc_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_lptim.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_jpeg.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_iwdg.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_irda.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_i2s.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_hcd.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_hash.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_hash_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_flash.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_flash_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_eth.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_dsi.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_dma2d.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_dma_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_dfsdm.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_dcmi.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_dcmi_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_dac.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_dac_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_cryp.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_cryp_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_crc.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_crc_ex.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_can.c|Drivers/STM32F7xx_HAL_Driver/src/stm32f7xx_hal_adc_ex.c|Drivers/BSP/src/stm32746g_discovery_ts.c|Drivers/BSP/src/stm32746g_discovery_sdram.c|Drivers/BSP/src/stm32746g_discovery_sd.c|Drivers/BSP/src/stm32746g_discovery_qspi.c|Drivers/BSP/src/stm32746g_discovery_lcd.c|Drivers/BSP/src/stm32746g_discovery_eeprom.c|Drivers/BSP/src/stm32746g_discovery_camera.c|Drivers/BSP/src/stm32746g_discovery_audio.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="STM32746G_DISCOVERY_RTOS.fr.ac6.managedbuild.target.gnu.cross.exe.1402645210" name="Executable" projectType="fr.ac6.managedbuild.target.gnu.cross.exe"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.debug.96811073;fr.ac6.managedbuild.config.gnu.cross.exe.debug.96811073.;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1727601284;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.562556516">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.release.1329825614;fr.ac6.managedbuild.config.gnu.cross.exe.release.1329825614.;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.100061684;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.380015747">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope"/>
+</cproject>
